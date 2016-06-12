@@ -19,7 +19,11 @@ Since the story code is taken from the branch name we assume the following conve
 
 for example from branch name:
 
-**feature/API-34193/edit-refund-role we get [API-34193] my commit message**
+**feature/API-34193/edit-refund-role**
+
+we get:
+
+**[API-34193] my commit message**
 
 If you are in the develop branch and you commit the commit message will look like:
 

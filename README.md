@@ -29,6 +29,11 @@ If you are in the develop branch and you commit the commit message will look lik
 
 **[develop] my commit message**
 
+## Dependencies
+
+This hook needs nodejs to run.
+
 ## Installing the hook
+
 - Add the prepare-commit-msg.js file to the .git/hooks subdirectory of your project.
 - Make the hook file executable: ```chmod +x .git/hooks/prepare-commit-msg.js```

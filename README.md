@@ -10,7 +10,7 @@ I'm working on projects where the team follows a branch naming convention that i
 
 Main advantage would be that it is easy to see what tasks/stories are being released and what is their state and if there is any prerequisite before release.
 
-Having this automatic is important so we don't waste time with filling this code on every commit message and we don't get it wrong when switching between branches we are working on.
+Having this automated is important so we don't waste time with filling this code on every commit message and we don't get it wrong when switching between branches we are working on.
 
 ## Branch naming convention
 Since the story code is taken from the branch name we assume the following convention for the branch naming:

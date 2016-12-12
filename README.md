@@ -35,5 +35,7 @@ This hook needs nodejs to run.
 
 ## Installing the hook
 
+You need to have [nodejs](https://nodejs.org/en/) installed.
+
 - Add the prepare-commit-msg.js file to the .git/hooks subdirectory of your project.
 - Make the hook file executable: ```chmod +x .git/hooks/prepare-commit-msg.js```

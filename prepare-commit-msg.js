@@ -83,11 +83,13 @@ function writeContentToCommitMsgFile(newContents) {
 }
 
 function createNewCommitMsg(originalDefaultCommitMsg, taskCode, description) {
-    let newContents = util.format('[%s] %s', taskCode, originalDefaultCommitMsg);
-    if (description) {
-
-        newContents = util.format('%s\n\n%s', newContents, description);
+    if (originalDefaultCommitMsg.indexOf("[" + taskCode + "]") >= 0) {
+        return originalDefaultCommitMsg;
     }
 
+    let newContents = util.format('[%s] %s', taskCode, originalDefaultCommitMsg);
+    if (description) {
+        newContents = util.format('%s\n\n%s', newContents, description);
+    }
     return newContents;
 }

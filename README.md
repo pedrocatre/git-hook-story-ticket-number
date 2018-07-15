@@ -13,6 +13,9 @@ Main advantage would be that it is easy to see what tasks/stories are being rele
 Having this automated is important so we don't waste time filling out this code on every commit message and so we don't get it wrong when switching between branches we are working on.
 
 ## Branch naming convention
+
+### One issue code
+
 Since the story code is taken from the branch name we assume the following convention for the branch naming:
 
 **{type_of_branch}/{story_code}/{name_of_story}**
@@ -28,6 +31,24 @@ we get:
 If you are in the develop branch and you commit the commit message will look like:
 
 **[develop] my commit message**
+
+### Two issue codes
+
+If subtasks are used, the naming convention for branch name can be:
+
+**{type_of_branch}/{story_code}/{subtask_code}/{name_of_subtask}**
+
+for example from branch name:
+
+**subtask/API-34193/API-34194/edit-refund-role-part-one**
+
+we get:
+
+**[API-34193] [API-34194] my commit message**
+
+### No issue codes
+
+If the branch name doesn't contain any code, the commit message won't be modified.
 
 ## Dependencies
 

@@ -64,7 +64,7 @@ function trimExtraCharactersFromStartAndEndOfLine(stdout) {
 }
 
 /**
- * Return ann array containing 1 or 2 tasks code depending on the format of the branch name.
+ * Return an array containing 1 or 2 tasks code depending on the format of the branch name.
  * @param {string} branchName branch name whose format could be:
  *  - {type_of_branch}/{story_code}/{name_of_story}
  *  - {type_of_branch}/{story_code}/{subtask_code}/{name_of_subtask}

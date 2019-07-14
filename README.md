@@ -54,9 +54,30 @@ If the branch name doesn't contain any code, the commit message won't be modifie
 
 This hook needs nodejs to run.
 
-## Installing the hook
+## Installing the hook locally
 
 You need to have [nodejs](https://nodejs.org/en/) installed.
 
 - Add the prepare-commit-msg file to the .git/hooks subdirectory of your project.
 - Make the hook file executable: ```chmod +x .git/hooks/prepare-commit-msg```
+
+## Installing the hook globally (recommended)
+
+You can install this hook globally by using a git template instead of setting it up for every repository.
+
+```mkdir -p ~/.git-templates/hooks```
+```git config --global init.templatedir '~/.git-templates'```
+
+Copy the hook into
+
+```~/.git-templates/hooks```
+
+Set permissions on file
+
+```chmod a+x ~/.git-templates/hooks/prepare-commit-msg```
+
+**NOTE: you will need to reinitialised existing Git repositories**. To achieve this go to the repository and run:
+
+```git init```
+
+The repository is reinitialised and nothing breaks.
